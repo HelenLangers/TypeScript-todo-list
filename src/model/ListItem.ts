@@ -12,5 +12,11 @@ export default class ListItem implements Item {
         private _checked: boolean = false,
     ) {}
 
-    get id()
+    get id(): string {
+        return this._id
+    }
+
+    set id(id: string) {
+        this._id = id
+    }
 }
