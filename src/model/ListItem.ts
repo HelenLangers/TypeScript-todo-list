@@ -28,5 +28,11 @@ export default class ListItem implements Item {
         this._item = item
     }
 
-    
+    get checked(): boolean {
+        return this._checked
+    }
+
+    set checked(checked: boolean) {
+        this._checked = checked
+    }
 }
